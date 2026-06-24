@@ -322,8 +322,8 @@
   .warning-x {
     flex-shrink: 0;
     width: 36px; height: 36px;
-    background: #FEE2E2;
-    color: #DC2626;
+    background: var(--light-grey);
+    color: var(--grey);
     border-radius: 8px;
     display: flex; align-items: center; justify-content: center;
     font-weight: 800; font-size: 1.1rem;
@@ -378,18 +378,18 @@
   .pain-label {
     display: inline-flex; align-items: center; gap: 6px;
     font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-    color: #DC2626; background: #FEE2E2;
+    color: var(--grey); background: var(--light-grey);
     padding: 4px 10px; border-radius: 100px; margin-bottom: 14px;
   }
   .solution-label {
     display: inline-flex; align-items: center; gap: 6px;
     font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-    color: #16A34A; background: #DCFCE7;
+    color: var(--orange-dark); background: var(--orange-light);
     padding: 4px 10px; border-radius: 100px; margin-bottom: 14px;
   }
   .pain-side h3, .solution-side h3 { margin-bottom: 10px; font-size: 1rem; }
   .pain-side p, .solution-side p { font-size: 0.92rem; }
-  .solution-side { background: #F0FDF4; }
+  .solution-side { background: var(--orange-light); }
   .painpoints-wrapper {
     background: var(--white);
     border: 1px solid var(--border);
@@ -608,7 +608,7 @@
   .pricing-desc { font-size: 0.9rem; color: var(--grey); margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
   .pricing-old { font-size: 0.85rem; color: #999; text-decoration: line-through; margin-bottom: 4px; }
   .pricing-price { font-size: 2rem; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
-  .pricing-save { font-size: 0.82rem; color: #16A34A; font-weight: 700; margin-bottom: 24px; }
+  .pricing-save { font-size: 0.82rem; color: var(--orange-dark); font-weight: 700; margin-bottom: 24px; }
   .pricing-features { margin-bottom: 28px; display: grid; gap: 10px; }
   .pricing-feature {
     display: flex; gap: 10px; align-items: flex-start;
@@ -625,17 +625,17 @@
   .pricing-warning {
     margin-top: 14px;
     font-size: 0.78rem;
-    color: #DC2626;
+    color: var(--orange-dark);
     text-align: center;
     font-weight: 600;
   }
   .pricing-fire {
-    background: #FEF3C7;
-    border: 1px solid #FDE68A;
+    background: var(--orange-light);
+    border: 1px solid #F1D4C6;
     border-radius: 8px;
     padding: 12px 16px;
     font-size: 0.83rem;
-    color: #92400E;
+    color: var(--orange-dark);
     margin-bottom: 20px;
     line-height: 1.6;
   }
@@ -1001,7 +1001,7 @@
 <section id="painpoints">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">你是否也有這些困擾？</span>
+      <span class="section-label">痛點 × 解方</span>
       <h2>這些困擾，你是不是也有？</h2>
       <div class="orange-divider"></div>
       <p style="margin-top:20px;">別擔心，《塔羅品牌陪跑計畫》將幫你一一突破</p>
@@ -1360,59 +1360,6 @@
         <p class="pricing-warning">⚠️ 限量陪伴門檻：本期僅限 8 名，額滿即關閉通道</p>
       </div>
 
-      <!-- 方案一 自學 -->
-      <div class="pricing-card">
-        <div class="pricing-plan-name">方案一</div>
-        <h3>自學課程方案</h3>
-        <p class="pricing-desc">5 堂直播課，掌握高流量塔羅內容與創業基礎架構</p>
-        <div class="pricing-features">
-          <div class="pricing-feature"><span class="check">✓</span><span>5 堂線上直播實作課（每堂 2 小時，含回放 2 個月）</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>課程講義與工具包</span></div>
-        </div>
-        <a href="#" class="btn btn-outline pricing-cta">直接購課</a>
-      </div>
-
-      <!-- 方案二 日更陪跑 -->
-      <div class="pricing-card featured">
-        <div class="pricing-badge">最受歡迎</div>
-        <div class="pricing-plan-name">方案二</div>
-        <h3>日更陪跑方案</h3>
-        <p class="pricing-desc">6 週實現塔羅品牌建立到收費服務設計</p>
-        <div class="pricing-features">
-          <div style="font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--grey);margin-bottom:6px;">客製策略</div>
-          <div class="pricing-feature"><span class="check">✓</span><span>2 次團體 QA（問到飽才結束）</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>每週 5 天塔羅內容發文批改建議</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>1 次 1:1 塔羅事業定位諮詢</span></div>
-          <div style="font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--grey);margin:12px 0 6px;">技能工具</div>
-          <div class="pricing-feature"><span class="check">✓</span><span>5 堂線上直播實作課（含回放）</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>塔羅高流量寫作 AI 機器人教學</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>塔羅內容靈感庫 AI 機器人教學</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>塔羅貼文轉 IG 輪播 AI 機器人教學</span></div>
-          <div style="font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--grey);margin:12px 0 6px;">學以致用</div>
-          <div class="pricing-feature"><span class="check">✓</span><span>6 週每日爆文模板靈感庫 + 每日發文實作</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>共責夥伴社群（互讚互留言互支持）</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>退款保障：課程全程參與但無獲得任何新客詢問可申請退費</span></div>
-        </div>
-        <a href="#" class="btn btn-primary pricing-cta">預約諮詢</a>
-      </div>
-
-      <!-- 方案三 進階顧問 -->
-      <div class="pricing-card">
-        <div class="pricing-plan-name">方案三</div>
-        <h3>進階顧問方案</h3>
-        <p class="pricing-desc">一季內從塔羅內容到 6 位數變現，建立永續獲客系統</p>
-        <div class="pricing-features">
-          <div class="pricing-feature" style="margin-bottom:8px;"><span class="check">✦</span><span style="color:var(--dark);font-weight:700;">包含「日更陪跑方案」所有內容，外加：</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>6 次與 Anna 1:1 討論變現客製化策略</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>塔羅課程 MVP 設計與上線規劃</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>招生頁面與銷售文案顧問協助</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>私域（電子報／LINE）設計與活躍策略</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>課程迭代與學員回購策略設計</span></div>
-          <div class="pricing-feature"><span class="check">✓</span><span>退款保障：全程參與但無任何變現可申請退費</span></div>
-        </div>
-        <a href="#" class="btn btn-outline pricing-cta">預約諮詢</a>
-      </div>
-
     </div>
   </div>
 </section>
@@ -1431,49 +1378,49 @@
           《塔羅品牌陪跑計畫》適合完全新手嗎？
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">（請填入答案）</div>
+        <div class="faq-a">適合。課程從 78 張牌的架構與四大元素（火、水、風、土）核心本質教起，循序進入大牌、小牌與宮廷牌，再延伸到解牌實戰，完全沒有基礎也能跟上。我們更在意的是你願不願意每週投入時間練習與實作。</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           這個計畫跟其他塔羅課有什麼不同？
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">（請填入答案）</div>
+        <div class="faq-a">坊間多數塔羅課只教牌義；這個計畫是以塔羅為核心「打造個人品牌與收入」的完整系統——從定位、高流量內容寫法、AI 工作流，到課程設計與變現一次串起，並以直播實作課取代預錄課，讓你下課就帶走可執行的成果。</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           我沒有社群帳號，可以從零開始嗎？
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">（請填入答案）</div>
+        <div class="faq-a">可以。品牌陪跑單元的第一週就從定位與個人主頁開始，帶你一步步建立高辨識度的帳號，不需要任何粉絲基礎，新手也能安心起步。</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           課程有回放嗎？我上班族時間不固定怎麼辦？
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">（請填入答案）</div>
+        <div class="faq-a">有。直播課皆提供回放（依方案保留時間，部分單元另交付平日錄播複習影片），就算當下無法參與，也能依自己的步調補課與練習，不必擔心時間卡得太死。</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           我已經有在接占卜服務，還適合加入嗎？
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">（請填入答案）</div>
+        <div class="faq-a">很適合。我們會幫你把零散的接案，升級為有定位、有定價階梯與招生路徑的品牌化服務，讓你跳脫平台削價競爭，建立屬於自己的受眾與回購。</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           計畫期間多忙？每週要投入多少時間？
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">（請填入答案）</div>
+        <div class="faq-a">建議每週預留約 3–5 小時：包含一堂直播實作課，以及課後的內容練習與發文。重點不在時數多寡，而是穩定累積與持續實作。</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           結束後還有支援嗎？
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">（請填入答案）</div>
+        <div class="faq-a">有。你會持續留在塔羅創業者專屬社群，與夥伴互相支持、互讚互留言；Anna 也會不定期分享最新的創業心法、心理學洞察與 AI 工具更新。</div>
       </div>
     </div>
   </div>
